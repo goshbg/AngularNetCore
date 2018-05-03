@@ -156,6 +156,7 @@ ClientBin/
 *.dbproj.schemaview
 *.pfx
 *.publishsettings
+*.jfm
 node_modules/
 
 # RIA/Silverlight projects
