@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <PropertyGroup>
+    <IncludeCompositeObjects>True</IncludeCompositeObjects>
+    <TargetDatabaseName>AngularNetCore</TargetDatabaseName>
+    <DeployScriptFileName>AngularNetCore.Database.sql</DeployScriptFileName>
+    <TargetConnectionString>data source=.;initial catalog=AngularNetCore;user id=AngularNetCore;password=123456;MultipleActiveResultSets=True;App=EntityFramework</TargetConnectionString>
+    <ProfileVersionNumber>1</ProfileVersionNumber>
+  </PropertyGroup>
+</Project>
