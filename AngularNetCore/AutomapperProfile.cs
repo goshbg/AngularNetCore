@@ -1,5 +1,6 @@
-﻿using AngularNetCore.DataAccess.Models;
+﻿using AngularNetCore.Dto;
 using AngularNetCore.Models;
+using AngularNetCore.Repository;
 using AutoMapper;
 
 namespace AngularNetCore
@@ -8,7 +9,8 @@ namespace AngularNetCore
     {
         public AutomapperProfile()
         {
-            CreateMap<Hero, HeroModel>();
+            CreateMap<HeroDto, HeroModel>();
+            RepositoryConfiguraiton.ConfigureAutomapper(this);
         }
     }
 }
