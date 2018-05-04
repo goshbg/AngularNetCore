@@ -1,4 +1,5 @@
 using AngularNetCore.Repository;
+using AutoMapper;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.SpaServices.Webpack;
@@ -19,6 +20,7 @@ namespace AngularNetCore
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddAutoMapper();
             services.AddMvc();
             RepositoryConfiguraiton.ConfigureServices(services, Configuration);
         }
