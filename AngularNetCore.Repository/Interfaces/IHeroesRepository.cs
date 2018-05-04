@@ -1,12 +1,12 @@
 ﻿using System.Collections.Generic;
-using AngularNetCore.DataAccess.Models;
+using AngularNetCore.Dto;
 
 namespace AngularNetCore.Repository.Interfaces
 {
     public interface IHeroesRepository
     {
-        Hero GetHeroById(int id);
-        IList<Hero> GetHeroes(string searchString, int startIndex, int limit);
+        HeroDto GetHeroById(int id);
+        IList<HeroDto> GetHeroes(string searchString, int startIndex, int limit);
         int GetHeroesCount(string searchString);
     }
 }

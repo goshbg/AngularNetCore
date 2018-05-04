@@ -1,28 +1,36 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using AngularNetCore.DataAccess.Models;
+using AngularNetCore.Dto;
 using AngularNetCore.Repository.Interfaces;
+using AutoMapper;
 
 namespace AngularNetCore.Repository.Implementation
 {
     public class HeroesRepository : IHeroesRepository
     {
         private readonly AngularnetcoreContext _context;
+        private readonly IMapper _mapper;
 
-        public HeroesRepository(AngularnetcoreContext context)
+        public HeroesRepository(AngularnetcoreContext context, IMapper mapper)
         {
             _context = context;
+            _mapper = mapper;
         }
 
-        public Hero GetHeroById(int id)
+        public HeroDto GetHeroById(int id)
         {
-            return _context.Heroes.FirstOrDefault(h => h.Id == id);
+            var heroEntity = _context.Heroes.FirstOrDefault(h => h.Id == id);
+            var heroDto = _mapper.Map<HeroDto>(heroEntity);
+            return heroDto;
         }
 
-        public IList<Hero> GetHeroes(string searchString, int currentPage, int itemsPerPage)
+        public IList<HeroDto> GetHeroes(string searchString, int currentPage, int itemsPerPage)
         {
-            var heroes = GetHeroesQuery(searchString);
-            return heroes.OrderBy(h=>h.Id).Skip((currentPage-1)*itemsPerPage).Take(itemsPerPage).ToList();
+            var heroes = GetHeroesQuery(searchString).OrderBy(h => h.Id).Skip((currentPage - 1) * itemsPerPage).Take(itemsPerPage).ToList();
+
+            var heroesDto = _mapper.Map<List<HeroDto>>(heroes);
+            return heroesDto;
         }
 
         public int GetHeroesCount(string searchString)

@@ -9,7 +9,9 @@ Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "AngularNetCode.Database", "
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AngularNetCore.DataAccess", "AngularNetCore.DataAccess\AngularNetCore.DataAccess.csproj", "{AD51E151-38EC-4915-985F-1840E00434AC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AngularNetCore.Repository", "AngularNetCore.Repository\AngularNetCore.Repository.csproj", "{71F59689-76D2-44E5-8229-FA82E79416F4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AngularNetCore.Repository", "AngularNetCore.Repository\AngularNetCore.Repository.csproj", "{71F59689-76D2-44E5-8229-FA82E79416F4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AngularNetCore.Dto", "AngularNetCore.Dto\AngularNetCore.Dto.csproj", "{38DF0A55-AEFD-4B78-98DA-665B81AB5E00}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,6 +37,10 @@ Global
 		{71F59689-76D2-44E5-8229-FA82E79416F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{71F59689-76D2-44E5-8229-FA82E79416F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{71F59689-76D2-44E5-8229-FA82E79416F4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{38DF0A55-AEFD-4B78-98DA-665B81AB5E00}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38DF0A55-AEFD-4B78-98DA-665B81AB5E00}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38DF0A55-AEFD-4B78-98DA-665B81AB5E00}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38DF0A55-AEFD-4B78-98DA-665B81AB5E00}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
