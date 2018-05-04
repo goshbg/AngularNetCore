@@ -60,11 +60,16 @@
     <Folder Include="Properties" />
     <Folder Include="Scripts" />
     <Folder Include="Tables" />
+    <Folder Include="Scripts\PostDeployment" />
   </ItemGroup>
   <ItemGroup>
     <None Include="local.publish.xml" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="Tables\Heroes.sql" />
+    <None Include="Scripts\PostDeployment\InsertHeroes.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <PostDeploy Include="Scripts\PostDeployment\Script.PostDeployment.sql" />
   </ItemGroup>
 </Project>
