@@ -1,0 +1,1 @@
+﻿{"ContextClassName":"AngularnetcoreContext","DefaultDacpacSchema":null,"IdReplace":false,"IncludeConnectionString":false,"OutputPath":"Models","ProjectRootNamespace":"AngularNetCore.DataAccess","SelectedToBeGenerated":0,"Tables":["dbo.Heroes"],"UseDatabaseNames":false,"UseFluentApiOnly":true,"UseHandleBars":false,"UseInflector":true}
